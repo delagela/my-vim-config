@@ -1,8 +1,13 @@
 source ~/.vim/autoload/pathogen.vim
 call pathogen#infect()
-syntax on
+set nocompatible
+
 filetype plugin indent on
-" <Leader> is "\"... but on azerty keyboard it better to use "," wich is more
-" accessible
 :let mapleader = ","
+syntax on
+set fdm=syntax
+let php_folding=1
+
 map <F3> :NERDTreeToggle<CR>
+
+set autoindent

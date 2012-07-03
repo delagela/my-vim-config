@@ -1,4 +1,6 @@
 source ~/.vim/autoload/pathogen.vim
+
+au BufNewFile,BufRead *.yaml,*.yml so ~/.vim/yaml.vim
 call pathogen#infect()
 set nocompatible
 
@@ -11,3 +13,6 @@ let php_folding=1
 map <F3> :NERDTreeToggle<CR>
 
 set autoindent
+
+
+
